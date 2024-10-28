@@ -52,7 +52,7 @@ app.controller("HomeController", function ($scope, $http) {
 
     $scope.loadrecord = function (id) {
 
-        $http.get("/Home/Get_databyid?id=" + id).then(function (d) {
+        $http.get("/Home/Get_databyid ?id=" + id).then(function (d) {
 
             $scope.register = d.data[0];
 
